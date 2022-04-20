@@ -6,7 +6,7 @@
 /*   By: wlanette <wlanette@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/26 16:35:49 by wlanette          #+#    #+#             */
-/*   Updated: 2022/04/20 15:26:13 by wlanette         ###   ########.fr       */
+/*   Updated: 2022/04/20 16:26:53 by wlanette         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -113,12 +113,15 @@ int	main(int argc, char *argv[])
 	{
 		if (!(ft_strncmp(argv[1], "Julia", 6)))
 		{
+			ft_init_default(fractol);
 			fractol->k = ft_init_complex(
 					4 * ((double)ft_atoi(argv[2]) / WIDTH - 0.5),
 					4 * ((double)(HEIGHT - ft_atoi(argv[3])) / HEIGHT - 0.5));
 			fractol->formula = &julia;
 			ft_start_fractol(fractol);
 		}
+		else
+			ft_show_aviable_args();
 	}
 	else
 		ft_show_aviable_args();
