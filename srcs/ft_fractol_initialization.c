@@ -6,7 +6,7 @@
 /*   By: wlanette <wlanette@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/03 20:28:19 by wlanette          #+#    #+#             */
-/*   Updated: 2022/04/20 15:16:47 by wlanette         ###   ########.fr       */
+/*   Updated: 2022/04/20 19:44:25 by wlanette         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,7 @@ void	ft_init_default(t_fractol *fractol)
 	fractol->max.re = 2.0;
 	fractol->max.im = fractol->min.im + (fractol->max.re - fractol->min.re) \
 		* (HEIGHT / WIDTH);
+	fractol->k = ft_init_complex(-0.4, 0.6);
 	fractol->color = 1;
 	fractol->press = 0;
 	fractol->formula = NULL;

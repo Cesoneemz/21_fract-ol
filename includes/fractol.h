@@ -6,7 +6,7 @@
 /*   By: wlanette <wlanette@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/26 16:36:48 by wlanette          #+#    #+#             */
-/*   Updated: 2022/04/20 15:31:57 by wlanette         ###   ########.fr       */
+/*   Updated: 2022/04/20 20:00:00 by wlanette         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,6 +85,8 @@ t_complex	ft_init_complex(double re, double im);
 void		ft_init_default(t_fractol *fractol);
 void		ft_draw_fractol(t_fractol *fractol);
 int			ft_close(void *param);
+int			ft_is_double(char *c);
+double		ft_atod(const char *str);
 
 /* MLX FUNCTIONS */
 

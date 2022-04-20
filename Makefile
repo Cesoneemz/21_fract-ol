@@ -6,13 +6,14 @@
 #    By: wlanette <wlanette@student.21-school.ru    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/26 16:28:27 by wlanette          #+#    #+#              #
-#    Updated: 2022/04/20 14:29:58 by wlanette         ###   ########.fr        #
+#    Updated: 2022/04/20 19:49:08 by wlanette         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME				= fractol
 SRCS				= ./srcs/main.c ./srcs/ft_keys_treatment.c ./srcs/ft_fractol_initialization.c \
-					  ./srcs/ft_generate_color.c ./srcs/ft_fractol_formula.c ./srcs/ft_fractol_mouse.c
+					  ./srcs/ft_generate_color.c ./srcs/ft_fractol_formula.c ./srcs/ft_fractol_mouse.c \
+					  ./srcs/ft_atod.c
 OBJS				= $(SRCS:.c=.o)
 
 LIBFT				= ./includes/libft/libft.a

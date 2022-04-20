@@ -6,7 +6,7 @@
 /*   By: wlanette <wlanette@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/26 16:35:49 by wlanette          #+#    #+#             */
-/*   Updated: 2022/04/20 16:26:53 by wlanette         ###   ########.fr       */
+/*   Updated: 2022/04/20 20:00:19 by wlanette         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ static void	ft_show_aviable_args(void)
 	ft_printf("%s\n", \
 	"| ./fractol Julia                                Draw Julia|");
 	ft_printf("%s\n", \
-	"| ./fractol Julia <x> <y>     Draw Julia with custom params|");
+	"| ./fractol Julia <re> <im>   Draw Julia with custom params|");
 	ft_printf("%s\n", \
 	"| ./fractol Mandelbar                        Draw Mandelbar|");
 	ft_printf("%s\n", \
@@ -79,7 +79,6 @@ static void	ft_start_fractol(t_fractol *fractol)
 static void	ft_parse_argv(char *argv, t_fractol *fractol)
 {
 	ft_init_default(fractol);
-	fractol->k = ft_init_complex(-0.4, 0.6);
 	if (!(ft_strncmp(argv, "Mandelbrot", 12)))
 		fractol->formula = &mandelbrot;
 	else if (!(ft_strncmp(argv, "Julia", 6)))
@@ -114,9 +113,9 @@ int	main(int argc, char *argv[])
 		if (!(ft_strncmp(argv[1], "Julia", 6)))
 		{
 			ft_init_default(fractol);
-			fractol->k = ft_init_complex(
-					4 * ((double)ft_atoi(argv[2]) / WIDTH - 0.5),
-					4 * ((double)(HEIGHT - ft_atoi(argv[3])) / HEIGHT - 0.5));
+			if (ft_is_double(argv[2]) || ft_is_double(argv[3]))
+				ft_show_aviable_args();
+			fractol->k = ft_init_complex(ft_atod(argv[2]), ft_atod(argv[3]));
 			fractol->formula = &julia;
 			ft_start_fractol(fractol);
 		}
