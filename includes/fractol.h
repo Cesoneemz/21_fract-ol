@@ -6,7 +6,7 @@
 /*   By: wlanette <wlanette@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/26 16:36:48 by wlanette          #+#    #+#             */
-/*   Updated: 2022/04/20 14:59:18 by wlanette         ###   ########.fr       */
+/*   Updated: 2022/04/20 15:31:57 by wlanette         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,18 +59,18 @@ typedef struct s_image
 
 typedef struct s_fractol
 {
-	void		(*formula)(struct s_fractol *);
-	void		*mlx;
-	void		*window;
+	void						(*formula)(struct s_fractol *);
+	void						*mlx;
+	void						*window;
 	unsigned long long			iter;
 	unsigned long long			max_iter;
-	int			color;
-	int			press;
-	t_complex	max;
-	t_complex	min;
-	t_complex	c;
-	t_complex	k;
-	t_image		*image;
+	int							color;
+	int							press;
+	t_complex					max;
+	t_complex					min;
+	t_complex					c;
+	t_complex					k;
+	t_image						*image;
 }				t_fractol;
 
 /* CONTROLS */
