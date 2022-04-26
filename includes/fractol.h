@@ -6,7 +6,7 @@
 /*   By: wlanette <wlanette@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/26 16:36:48 by wlanette          #+#    #+#             */
-/*   Updated: 2022/04/20 20:00:00 by wlanette         ###   ########.fr       */
+/*   Updated: 2022/04/26 10:55:49 by wlanette         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@
 # include <math.h>
 # include <mlx.h>
 # include <stdlib.h>
-# include "./libft/libft.h"
 # include "./ft_printf/includes/ft_printf.h"
 
 /* DEFINES */

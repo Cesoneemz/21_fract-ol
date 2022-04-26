@@ -6,7 +6,7 @@
 /*   By: wlanette <wlanette@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/26 16:35:49 by wlanette          #+#    #+#             */
-/*   Updated: 2022/04/20 20:00:19 by wlanette         ###   ########.fr       */
+/*   Updated: 2022/04/26 10:54:23 by wlanette         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -125,4 +125,5 @@ int	main(int argc, char *argv[])
 	else
 		ft_show_aviable_args();
 	exit(EXIT_SUCCESS);
+	return (0);
 }

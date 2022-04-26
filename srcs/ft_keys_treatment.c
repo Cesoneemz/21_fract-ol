@@ -6,7 +6,7 @@
 /*   By: wlanette <wlanette@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/26 17:14:24 by wlanette          #+#    #+#             */
-/*   Updated: 2022/04/20 14:19:31 by wlanette         ###   ########.fr       */
+/*   Updated: 2022/04/26 10:58:52 by wlanette         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ static void	ft_move(int keycode, t_fractol *fractol)
 int	ft_keys_treatment(int keycode, t_fractol *fractol)
 {
 	if (keycode == ESC)
-		exit(0);
+		ft_close(fractol);
 	else if (keycode == C_BUTTON)
 		ft_color_fractol(fractol);
 	else if (keycode == KEY_ARROW_LEFT || keycode == KEY_ARROW_UP \
