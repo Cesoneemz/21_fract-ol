@@ -6,7 +6,7 @@
 /*   By: wlanette <wlanette@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/26 16:36:48 by wlanette          #+#    #+#             */
-/*   Updated: 2022/04/26 10:55:49 by wlanette         ###   ########.fr       */
+/*   Updated: 2022/04/26 11:15:17 by wlanette         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,7 +98,6 @@ void		mandelbrot(t_fractol *fractol);
 void		julia(t_fractol *fractol);
 void		mandelbar(t_fractol *fractol);
 void		p_burning_ship(t_fractol *fractol);
-int			ft_change_julia(int x, int y, t_fractol *fractol);
 void		horizontal_mandelbar(t_fractol *fractol);
 
 #endif

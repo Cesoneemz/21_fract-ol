@@ -6,7 +6,7 @@
 /*   By: wlanette <wlanette@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/26 16:35:49 by wlanette          #+#    #+#             */
-/*   Updated: 2022/04/26 10:54:23 by wlanette         ###   ########.fr       */
+/*   Updated: 2022/04/26 11:14:54 by wlanette         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,9 +69,6 @@ static void	ft_start_fractol(t_fractol *fractol)
 	mlx_hook(fractol->window, KEY_PRESS, 1L << 0, ft_keys_treatment, fractol);
 	mlx_hook(fractol->window, MOUSE_PRESS, 1L << 2, ft_mouse_control, fractol);
 	mlx_hook(fractol->window, DESTROY, 0, ft_close, fractol);
-	if (fractol->formula == &julia)
-		mlx_hook(fractol->window, MOUSE_MOTION, 1L << 6, \
-		ft_change_julia, fractol);
 	ft_draw_fractol(fractol);
 	mlx_loop(fractol->mlx);
 }
